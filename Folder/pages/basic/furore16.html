@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=500" />
+	<meta name="keywords" content="Furore, DSI, 16, fest, dayananda" />
+
+	<title>Furore 2K16</title>
+    <link rel="stylesheet" href="home.css">
+    <script type="text/javascript" src="../../js/main.js"></script>
+    
+    <link rel="stylesheet" href="../../css/top/reset.css">
+     <link rel="stylesheet" href="../../css/top/style.css">
+<!--for list hamburger-->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../../css/list/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="../../css/list/style.css"> <!-- Resource style -->
+	<script src="../../js/modernizr.js"></script> <!-- Modernizr -->
+  	
+    
+<!--    for heading-->
+    <link rel="stylesheet" href="../../css/headline/reset.css">
+    <link rel="stylesheet" href="../../css/headline/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  	
+<!--    font awesome-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="../../css/style.css" type="text/css">
+	<link rel="stylesheet" href="../../css/examples.css" type="text/css">
+<!--	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+
+	<script type="text/javascript" src="../../js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/lib/highlight.pack.js"></script>
+	<script type="text/javascript" src="../../js/lib/modernizr.custom.min.js"></script>
+<!--	<script type="text/javascript" src="../../js/examples.js"></script>-->
+	
+
+
+
+	<script type="text/javascript" src="../../js/lib/greensock/TweenMax.min.js"></script>
+	<script type="text/javascript" src="../../scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script type="text/javascript" src="../../scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script type="text/javascript" src="../../scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <!--for slides-->
+    <style type="text/css">
+	#pinContainer {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		-webkit-perspective: 1000;
+		        perspective: 1000;
+	}
+	#slideContainer {
+		width: 400%; /* to contain 4 panels, each with 100% of window width */
+		height: 100%;
+	}
+	.panel {
+		height: 100%;
+		width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+		float: left;
+	}
+</style>
+    <script>
+	$(function () { // wait for document ready
+		// init
+		var controller = new ScrollMagic.Controller();
+
+		// define movement of panels
+		var wipeAnimation = new TimelineMax()
+			// animate to second panel
+			.to("#slideContainer", 0.5, {z: -150})		// move back in 3D space
+			.to("#slideContainer", 1,   {x: "-25%"})	// move in to first panel
+			.to("#slideContainer", 0.5, {z: 0})				// move back to origin in 3D space
+			// animate to third panel
+			.to("#slideContainer", 0.5, {z: -150, delay: 1})
+			.to("#slideContainer", 1,   {x: "-50%"})
+			.to("#slideContainer", 0.5, {z: 0})
+			// animate to forth panel
+			.to("#slideContainer", 0.5, {z: -150, delay: 1})
+			.to("#slideContainer", 1,   {x: "-75%"})
+			.to("#slideContainer", 0.5, {z: 0});
+
+		// create scene to pin and link animation
+		new ScrollMagic.Scene({
+				triggerElement: "#pinContainer",
+				triggerHook: "onLeave",
+				duration: "500%"
+			})
+			.setPin("#pinContainer")
+			.setTween(wipeAnimation)
+			.addIndicators() // add indicators (requires plugin)
+			.addTo(controller);
+	});
+</script>
+    
+    
+    
+    
+    
+    
+    
+</head>
+<body>
+	<a href="#art"><div style="width:50px;height:10px;margin-left:105px;margin-top:90px"><font color="#666633">ART</font></div></a>
+	<a href="#music"><div style="width:50px;height:10px;margin-left:225px;margin-top:-10px"><font color="#666633">MUSIC</font></div></a>
+	<a href="#photography"><div style="width:50px;height:10px;margin-left:355px;margin-top:-10px"><font color="#666633">PHOTOGRAPHY</font></div></a>
+	<a href="#theatre"><div style="width:50px;height:10px;margin-left:855px;margin-top:-10px"><font color="#666633">THEATRE</font></div></a>
+	<a href="#literary"><div style="width:50px;height:10px;margin-left:1000px;margin-top:-10px"><font color="#666633">LITERARY</font></div></a>
+	<a href="#dance"><div style="width:50px;height:10px;margin-left:1155px;margin-top:-10px"><font color="#666633">DANCE</font></div></a>
+
+<!--    for animated text-->
+        <section class="cd-intro">
+		<h1 class="cd-headline rotate-1">
+			<span><font color="#993366">Furore is</font></span>
+			<span class="cd-words-wrapper">
+				<b class="is-visible"><font color="#993366">Outburst</font></b>
+				<b><font color="#993366">Fun</font></b>
+				<b><font color="#993366">Fest</font></b>
+			</span>
+		</h1>
+	</section> <!-- cd-intro -->
+    
+<!--    main-->
+        	<section id="titlechart">
+    <div id="description">
+    <section class="cd-intro">
+	<div class="cd-intro-content bouncy">
+		
+        
+		<div class="action-wrapper">
+		              
+					<i class="fa fa-chevron-down fa-2x" style="color:antiquewhite"></i>
+		</div>
+	</div
+        </div>
+        </div>
+</section>
+    
+<!--    list-->
+      <nav class="cd-stretchy-nav">
+		<a class="cd-nav-trigger" href="#0">
+			Menu
+			<span aria-hidden="true"></span>
+		</a>
+
+		<ul>
+			<li><a href="#0" class="active"><span>Home</span></a></li>
+			<li><a href="../schedule/schedule.html"><span>Schedule</span></a></li>
+			<li><a href="#0"><span>Sponsors</span></a></li>
+			<li><a href="./credits.html"><span>Credits</span></a></li>
+			<li><a href="./locate.html"><span>Contact</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+    
+    
+	<ul id="menu"></ul>
+	<div id="content-wrapper">
+		<div id="example-wrapper" class="horizontal">
+			<div class="scrollContent">
+				<section id="titlechart">
+					<div id="description">
+						<h1>18-19 March</h1>
+						<h2>Scroll down for Events</h2>
+                        <h2>Right for Schedule</h2>
+					<i class="fa fa-chevron-down fa-2x" style="color:antiquewhite"></i>
+					</div>
+				</section>
+                
+<!--
+                
+                    <div id="right chevron">
+                    	<i class="fa fa-chevron-right fa-2x" style="color:antiquewhite">For event schedule</i>
+            </div>
+-->
+				<section class="demo">
+					<div class="spacer s2"></div>
+					<div id="trigger" class="spacer s0"></div>
+					<div id="target" class="box2 blue">
+						<p>Event schedular</p>
+					
+					</div>
+					<div class="spacer s2"></div>
+					<script>
+						// init controller
+						var controller = new ScrollMagic.Controller({vertical: false});
+
+						// build tween
+						var tween = TweenMax.to("#target", 0.5, {backgroundColor: "green", width: "+=400"});
+
+						// build scene
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 500})
+										.setTween(tween)
+										.addIndicators() // add indicators (requires plugin)
+										.addTo(controller);
+					</script>
+				</section>
+				<div class="spacer s_viewport"></div>
+			</div>
+		</div>
+	</div> 
+    <!-- for slides -->
+    <div id="pinContainer">
+	<div id="slideContainer">
+		<a name="art"></a>
+		<section class="panel purple" id="sec1">
+			<b>ART</b>
+            
+		</section>
+		<a name="music"></a>
+		<section class="panel blueviolet" id="sec2">
+			<b>MUSIC</b>
+		</section>
+
+		<a name="literary"></a>
+		<section class="panel green" id="sec3">
+			<a name="literary"></a>
+            <img src="type%20writer.jpg"/>
+            <a href="#"></a>
+            
+            
+            <ol class="cd-slider-navigation">
+			<li class="selected"><a href="#0"><em>Technical</em></a></li>
+			<li><a href="#0"><em>Design</em></a></li>
+			<li><a href="#0"><em>Media &amp Marketing</em></a></li>
+			<li><a href="#0"><em>Love DSI</em></a></li>
+                <li><a href="#0"><em>Media &amp Marketing</em></a></li>
+			<li><a href="#0"><em>Love DSI</em></a></li>
+                <li><a href="#0"><em>Media &amp Marketing</em></a></li>
+			<li><a href="#0"><em>Love DSI</em></a></li>
+		</ol> <!-- .cd-slider-navigation -->
+            
+            
+            
+            
+            
+		</section>
+		<section class="panel orange" id="sec4">
+			<img src="music.png"/>
+		</section>
+	</div>
+</div>
+<!--<div class="spacer s2"></div> for space-->
+
+    
+<!--	<script type="text/javascript" src="../../js/tracking.js"></script>-->
+    
+    
+    
+<!--    back to top button-->
+    <a href="#0" class="cd-top">Top</a>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../../js/top/js/main.js"></script> <!-- Gem jQuery -->
+<!--        for list-->
+        
+<script src="../../js/list/jquery-2.1.4.js"></script>
+<script src="../../js/list/main.js"></script> <!-- Resource jQuery -->
+        
+<!--        for animated headline-->
+        <script src="../../js/headline/jquery-2.1.1.js"></script>
+        <script src="../../js/headline/main.js"></script>
+</body>
+</html>
